@@ -1,9 +1,14 @@
 import React from 'react';
-import './App.css';
+import ListOfTasks from './components/ListOfTasks';
+import FomrsPath from './components/FomrsPath';
+import Provider from './Context/Provider';
 
 function App() {
   return (
-    <h1> hello world!!</h1>
+    <Provider>
+      <ListOfTasks />
+      <FomrsPath />
+    </Provider>
   );
 }
 
