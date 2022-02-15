@@ -1,7 +1,7 @@
 import React from 'react';
-import ListOfTasks from './components/ListOfTasks';
-import FomrsPath from './components/FomrsPath';
-import Provider from './Context/Provider';
+import ListOfTasks from './components/ListOfTasks.jsx';
+import FomrsPath from './components/FomrsPath.jsx';
+import Provider from './Context/Provider.js';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Context from './Context';
+import Context from './Context.js';
 
 function Provider({ children }) {
   const [openForms, setOpenForms] = useState(false);

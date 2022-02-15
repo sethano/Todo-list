@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import FomrsButton from './FormsButton';
 import FormToNewTask from './FormsToNewTask';
-import { openForms } from '../Context/Provider';
+import Context from '../Context/Context';
 
 const FomrsPath = () => {
+  const {
+    openForms
+  } = useContext(Context);
   return (
-    openForms ? <FomrsButton /> : <FormToNewTask />
+    !openForms ? <FomrsButton /> : <FormToNewTask />
   );
 };
 
