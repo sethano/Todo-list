@@ -6,6 +6,7 @@
   The objective here is to use the TDD methodology to create a interactive project.
   
   The main points to reach are:
+  
     1. Can see the task
       *. and can be ordened by date, name or status
     2. Add a new task
