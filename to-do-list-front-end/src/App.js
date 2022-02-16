@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Provider from '../Context/Provider';
+import Provider from './Context/Provider';
+import Home from './components/Home';
 
 function App() {
   return (
     <Provider>
-      
+      <Home />
     </Provider>
   );
 }

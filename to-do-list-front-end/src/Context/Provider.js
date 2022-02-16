@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Context } from './Context';
+import Context from './Context';
 
 function Provider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ function Provider({ children }) {
 }
 
 Provider.propTypes = {
-  children: PropTypes.oneOfType(PropTypes.node, PropTypes.func).isRequired,
+  children: PropTypes.oneOfType(PropTypes.node, PropTypes.func, PropTypes.object).isRequired,
 };
 
 export default Provider;
